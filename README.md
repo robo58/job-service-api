@@ -23,8 +23,9 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ## Setup
 
-composer require
-php artisan key:generate
+`composer require`
+
+`php artisan key:generate`
 
 ## Laravel Sponsors
 
