@@ -14,6 +14,14 @@ class CreateForeignKeys extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
+            $table->string('github')->nullable()->after('email');
+            $table->string('linkedin')->nullable();
+            $table->string('facebook')->nullable();
+            $table->string('instagram')->nullable();
+            $table->string('location')->nullable();
+            $table->bigInteger('recruiter_id')->nullable()->unsigned();
+        });
+        Schema::table('users', function (Blueprint $table) {
             $table->foreign('recruiter_id')->references('id')->on('recruiters')->onUpdate('cascade')->onDelete('cascade');
         });
         Schema::table('recruiters', function (Blueprint $table) {
