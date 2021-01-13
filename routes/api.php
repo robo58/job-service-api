@@ -19,6 +19,9 @@ use Orion\Facades\Orion;
 //     return $request->user();
 // });
 
+URL::forceRootUrl('https://studenti.sum.ba/projekti/fsre_rwa/2020/g31');
+
+
 Route::post('register', 'Auth\RegisterController@register');
 Route::post('login', 'Auth\LoginController@login');
 Route::post('logout', 'Auth\LoginController@logout');

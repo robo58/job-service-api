@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+URL::forceRootUrl('https://studenti.sum.ba/projekti/fsre_rwa/2020/g31');
+
 Route::get('/', function () {
     return view('welcome');
 });
