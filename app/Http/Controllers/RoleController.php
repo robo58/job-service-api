@@ -11,5 +11,15 @@ class RoleController extends Controller
 {
     use DisableAuthorization;
 
+    /**
+     * The relations that are allowed to be included together with a resource.
+     *
+     * @return array
+     */
+    protected function includes() : array
+    {
+        return ['users'];
+    }
+
     protected $model = Role::class;
 }

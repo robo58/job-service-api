@@ -11,5 +11,15 @@ class UserController extends Controller
 {
     use DisableAuthorization;
 
+    /**
+     * The relations that are allowed to be included together with a resource.
+     *
+     * @return array
+     */
+    protected function includes() : array
+    {
+        return ['skills', 'roles', 'recruiter', 'reviews', 'jobs', 'active_jobs','finished_jobs'];
+    }
+
     protected $model = User::class;
 }

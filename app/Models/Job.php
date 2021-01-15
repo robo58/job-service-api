@@ -9,6 +9,20 @@ class Job extends Model
 {
     use HasFactory;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'title',
+        'description',
+        'employee_id',
+        'recruiter_id',
+        'in_progress',
+        'finished'
+    ];
+
     public function skills()
     {
         return $this->belongsToMany(Skill::class);

@@ -9,6 +9,17 @@ class Recruiter extends Model
 {
     use HasFactory;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'user_id',
+        'title',
+        'location'
+    ];
+
     public function user()
     {
         return $this->hasOne(User::class);
