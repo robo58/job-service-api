@@ -18,7 +18,7 @@ class JobController extends Controller
      */
     protected function includes() : array
     {
-        return ['skills', 'employee', 'recruiter'];
+        return ['skills', 'employee', 'recruiter', 'applications'];
     }
 
     protected $model = Job::class;

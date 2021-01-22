@@ -4,11 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Orion\Http\Controllers\RelationController;
+use App\Models\User;
 use Orion\Concerns\DisableAuthorization;
 
-use App\Models\User;
-
-class RecruiterJobsController extends RelationController
+class UserApplicationsController extends RelationController
 {
     use DisableAuthorization;
 
@@ -24,5 +23,5 @@ class RecruiterJobsController extends RelationController
 
     protected $model = User::class;
 
-    protected $relation = 'recruiterJobs';
+    protected $relation = 'applications';
 }

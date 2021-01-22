@@ -4,11 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Orion\Http\Controllers\RelationController;
+use App\Models\Job;
 use Orion\Concerns\DisableAuthorization;
 
-use App\Models\User;
-
-class RecruiterJobsController extends RelationController
+class JobApplicationsController extends RelationController
 {
     use DisableAuthorization;
 
@@ -19,10 +18,10 @@ class RecruiterJobsController extends RelationController
      */
     protected function includes() : array
     {
-        return ['skills', 'employee', 'recruiter', 'applications'];
+        return ['skills', 'roles', 'userReviews', 'userJobs', 'active_jobs','finished_jobs', 'applications'];
     }
 
-    protected $model = User::class;
+    protected $model = Job::class;
 
-    protected $relation = 'recruiterJobs';
+    protected $relation = 'applications';
 }

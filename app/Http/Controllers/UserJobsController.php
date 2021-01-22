@@ -18,7 +18,7 @@ class UserJobsController extends RelationController
      */
     protected function includes() : array
     {
-        return ['skills', 'employee', 'recruiter'];
+        return ['skills', 'employee', 'recruiter', 'applications'];
     }
 
     protected $model = User::class;
