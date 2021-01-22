@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Orion\Http\Controllers\Controller;
 use Orion\Concerns\DisableAuthorization;
 
-use App\Models\Recruiter;
+use App\Models\User;
 
 class RecruiterController extends Controller
 {

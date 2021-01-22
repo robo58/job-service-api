@@ -42,8 +42,6 @@ Route::group(['as' => 'api.'], function () use ($resources) {
     }
 
     // one to one
-    Orion::hasOneResource('users', 'recruiter', UserRecruiterController::class);
-    Orion::hasOneResource('recruiters', 'user', RecruiterUserController::class);
     Orion::belongsToResource('jobs', 'recruiter', JobRecruiterController::class);
     Orion::belongsToResource('jobs', 'employee', JobEmployeeController::class);
     Orion::belongsToResource('reviews', 'user', ReviewUserController::class);
