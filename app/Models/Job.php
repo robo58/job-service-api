@@ -29,10 +29,10 @@ class Job extends Model
     }
     public function employee()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'employee_id');
     }
     public function recruiter()
     {
-        return $this->belongsTo(Recruiter::class);
+        return $this->belongsTo(User::class, 'recruiter_id');
     }
 }

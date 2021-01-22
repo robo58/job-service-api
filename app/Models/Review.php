@@ -23,10 +23,10 @@ class Review extends Model
 
     public function recruiter()
     {
-        return $this->belongsTo(Recruiter::class);
+        return $this->belongsTo(User::class, 'reviewer_id');
     }
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
     }
 }

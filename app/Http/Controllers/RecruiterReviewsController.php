@@ -22,7 +22,7 @@ class RecruiterReviewsController extends RelationController
         return ['recruiter', 'user'];
     }
 
-    protected $model = Recruiter::class;
+    protected $model = User::class;
 
-    protected $relation = 'reviews';
+    protected $relation = 'recruiterReviews';
 }

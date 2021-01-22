@@ -23,5 +23,5 @@ class UserJobsController extends RelationController
 
     protected $model = User::class;
 
-    protected $relation = 'jobs';
+    protected $relation = 'userJobs';
 }

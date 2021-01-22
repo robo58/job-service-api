@@ -22,7 +22,7 @@ class RecruiterJobsController extends RelationController
         return ['skills', 'employee', 'recruiter'];
     }
 
-    protected $model = Recruiter::class;
+    protected $model = User::class;
 
-    protected $relation = 'jobs';
+    protected $relation = 'recruiterJobs';
 }

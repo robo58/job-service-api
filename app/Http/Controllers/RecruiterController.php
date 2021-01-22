@@ -19,8 +19,8 @@ class RecruiterController extends Controller
      */
     protected function includes() : array
     {
-        return ['user', 'jobs', 'finished_jobs', 'reviews'];
+        return ['recruiterJobs', 'finished_jobs', 'recruiterReviews'];
     }
 
-    protected $model = Recruiter::class;
+    protected $model = User::class;
 }

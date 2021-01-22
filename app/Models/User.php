@@ -27,8 +27,8 @@ class User extends Authenticatable
         'linkedin',
         'instagram',
         'location',
-        'recruiter_id',
         'api_token',
+        'is_recruiter',
     ];
 
     /**
@@ -66,17 +66,21 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(Role::class);
     }
-    public function recruiter()
+    public function userReviews()
     {
-        return $this->hasOne(Recruiter::class);
+        return $this->hasMany(Review::class, 'employee_id');
     }
-    public function reviews()
+    public function recruiterReviews()
     {
-        return $this->hasMany(Review::class);
+        return $this->hasMany(Review::class, 'reviewer_id');
     }
-    public function jobs()
+    public function userJobs()
     {
-        return $this->hasMany(Job::class);
+        return $this->hasMany(Job::class, 'user_id');
+    }
+    public function recruiterJobs()
+    {
+        return $this->hasMany(Job::class, 'recruiter_id');
     }
     public function activeJobs()
     {

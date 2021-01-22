@@ -19,7 +19,7 @@ class ReviewRecruiterController extends RelationController
      */
     protected function includes() : array
     {
-        return ['user', 'jobs', 'finished_jobs', 'reviews'];
+        return ['recruiterJobs', 'finished_jobs', 'recruiterReviews'];
     }
 
     protected $model = Review::class;
