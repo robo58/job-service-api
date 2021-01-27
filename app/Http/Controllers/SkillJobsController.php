@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Orion\Http\Controllers\Controller;
+use Orion\Http\Controllers\RelationController;
 use Orion\Concerns\DisableAuthorization;
-use App\Models\Job;
 
-class JobController extends Controller
+use App\Models\Skill;
+
+class SkillJobsController extends RelationController
 {
     use DisableAuthorization;
 
@@ -21,10 +22,7 @@ class JobController extends Controller
         return ['skills', 'employee', 'recruiter', 'applications'];
     }
 
-    protected function filterableBy() : array
-    {
-        return ['id', 'skills.id', 'recruiter.id', 'employee.id', 'created_at'];
-    }
+    protected $model = Skill::class;
 
-    protected $model = Job::class;
+    protected $relation = 'jobs';
 }

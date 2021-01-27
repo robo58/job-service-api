@@ -55,6 +55,7 @@ Route::group(['as' => 'api.'], function () use ($resources) {
 
     // many to many
     Orion::belongsToManyResource('jobs', 'skills', JobSkillsController::class);
+    Orion::belongsToManyResource('skills', 'jobs', SkillJobsController::class);
     Orion::belongsToManyResource('users', 'skills', UserSkillsController::class);
     Orion::belongsToManyResource('users', 'roles', UserRolesController::class);
     Orion::belongsToManyResource('users', 'applications', UserApplicationsController::class);
