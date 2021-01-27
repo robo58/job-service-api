@@ -68,7 +68,7 @@ class User extends Authenticatable
     }
     public function userReviews()
     {
-        return $this->hasMany(Review::class, 'employee_id');
+        return $this->hasMany(Review::class, 'user_id');
     }
     public function recruiterReviews()
     {

@@ -23,7 +23,7 @@ class JobController extends Controller
 
     protected function filterableBy() : array
     {
-        return ['id', 'skills.id', 'recruiter.id', 'employee.id', 'created_at'];
+        return ['id', 'skills', 'recruiter.id', 'employee.id', 'created_at'];
     }
 
     protected $model = Job::class;
