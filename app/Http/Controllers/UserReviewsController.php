@@ -16,7 +16,7 @@ class UserReviewsController extends RelationController
      *
      * @return array
      */
-    protected function includes() : array
+    public function includes() : array
     {
         return ['recruiter', 'user'];
     }

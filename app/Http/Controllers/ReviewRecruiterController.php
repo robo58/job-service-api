@@ -17,7 +17,7 @@ class ReviewRecruiterController extends RelationController
      *
      * @return array
      */
-    protected function includes() : array
+    public function includes() : array
     {
         return ['recruiterJobs', 'finished_jobs', 'recruiterReviews'];
     }

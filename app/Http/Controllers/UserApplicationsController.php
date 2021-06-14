@@ -16,7 +16,7 @@ class UserApplicationsController extends RelationController
      *
      * @return array
      */
-    protected function includes() : array
+    public function includes() : array
     {
         return ['skills', 'employee', 'recruiter', 'applications'];
     }

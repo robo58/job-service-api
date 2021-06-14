@@ -17,7 +17,7 @@ class RecruiterUserController extends RelationController
      *
      * @return array
      */
-    protected function includes() : array
+    public function includes() : array
     {
         return ['skills', 'roles', 'userReviews', 'userJobs', 'active_jobs','finished_jobs', 'applications'];
     }

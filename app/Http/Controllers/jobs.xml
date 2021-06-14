@@ -1,0 +1,35 @@
+<jobs>
+    <LDAPzapis>
+        <attribute name="title">Job 1</attribute>
+        <attribute name="description">Job 1 description</attribute>
+        <attribute name="employee email">testemployee1@gmail.com</attribute>
+        <attribute name="recruiter email">testrecruiter1@gmail.com</attribute>
+        <attribute name="in progress">0</attribute>
+        <attribute name="finished">0</attribute>
+        <attribute name="skill">HTML</attribute>
+        <attribute name="skill">CSS</attribute>
+        <attribute name="skill">JavaScript</attribute>
+    </LDAPzapis>
+    <LDAPzapis>
+        <attribute name="title">Job 2</attribute>
+        <attribute name="description">Job 2 description</attribute>
+        <attribute name="employee email">testemployee2@gmail.com</attribute>
+        <attribute name="recruiter email">testrecruiter2@gmail.com</attribute>
+        <attribute name="in progress">0</attribute>
+        <attribute name="finished">1</attribute>
+        <attribute name="skill">PHP</attribute>
+        <attribute name="skill">HTML</attribute>
+        <attribute name="skill">SQL</attribute>
+    </LDAPzapis>
+    <LDAPzapis>
+        <attribute name="title">Job 3</attribute>
+        <attribute name="description">Job 3 description</attribute>
+        <attribute name="employee email">testemployee3@gmail.com</attribute>
+        <attribute name="recruiter email">testrecruiter3@gmail.com</attribute>
+        <attribute name="in progress">1</attribute>
+        <attribute name="finished">0</attribute>
+        <attribute name="skill">C</attribute>
+        <attribute name="skill">Networking</attribute>
+        <attribute name="skill">ShellScript</attribute>
+    </LDAPzapis>
+</jobs>

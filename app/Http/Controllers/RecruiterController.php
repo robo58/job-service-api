@@ -17,7 +17,7 @@ class RecruiterController extends Controller
      *
      * @return array
      */
-    protected function includes() : array
+    public function includes() : array
     {
         return ['recruiterJobs', 'finished_jobs', 'recruiterReviews'];
     }

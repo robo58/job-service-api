@@ -17,7 +17,7 @@ class JobSkillsController extends RelationController
      *
      * @return array
      */
-    protected function includes() : array
+    public function includes() : array
     {
         return ['users', 'jobs'];
     }

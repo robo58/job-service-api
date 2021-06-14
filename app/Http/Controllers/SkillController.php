@@ -16,7 +16,7 @@ class SkillController extends Controller
      *
      * @return array
      */
-    protected function includes() : array
+    public function includes() : array
     {
         return ['users', 'jobs'];
     }
